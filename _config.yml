@@ -107,3 +107,11 @@ deploy:
   repo:
     github: https://github.com/WanHanxi/WanHanxi.github.io.git
   branch: master
+
+# Leancloud counter
+leancloud_counter_security:
+  enable_sync: true
+  app_id: sq4DPHkggBn5GYewXDTiW1fU-9Nh9j0Va
+  app_key: O8Pp93L0194C5QNjVFfMy0lz
+  username: WanHanxi # Will be asked while deploying if is left blank
+  password: <your password> # Recommmended to be left blank. Will be asked while deploying if is left blank
