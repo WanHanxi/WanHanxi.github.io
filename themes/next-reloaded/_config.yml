@@ -233,7 +233,15 @@ chat:
 # ---------------------------------------------------------------
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+#首页文章不展示全文显示摘要
+excerpt_description: true #自动在首页对文章进行摘要描述作为前言文本
+
+#自动缩进 https://github.com/chekun/hexo-excerpt
+excerpt:
+  depth: 3
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -390,8 +398,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/WanHanxi
   title: Follow me on GitHub
 
 
@@ -612,16 +620,18 @@ changyan:
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
   enable: true
-  appid: sq4DPHkggBn5GYewXDTiW1fU-9Nh9j0Va # Your leancloud application appid
-  appkey: O8Pp93L0194C5QNjVFfMy0lz # Your leancloud application appkey
-  notify: false # Mail notifier
+  appid: JSjfkN2Wfvfhvec99c2bS7Gi-MdYXbMMI
+  # sq4DPHkggBn5GYewXDTiW1fU-9Nh9j0Va # Your leancloud application appid
+  appkey: 6kvmcr2ah2RfnKLtwYAyE0Lb
+  # O8Pp93L0194C5QNjVFfMy0lz # Your leancloud application appkey
+  notify: true # Mail notifier
   verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
+  placeholder: 填写邮箱以获得回复提醒~ # Comment box placeholder
   avatar: mm # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
@@ -690,7 +700,7 @@ cnzz_siteid:
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: sq4DPHkggBn5GYewXDTiW1fU-9Nh9j0Va # <your app id>
   app_key: O8Pp93L0194C5QNjVFfMy0lz # <your app key>
   # Required for apps from CN region
@@ -711,14 +721,24 @@ firestore:
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
-busuanzi_count:
-  enable: false
-  total_visitors: true
-  total_visitors_icon: fa fa-user
-  total_views: true
-  total_views_icon: fa fa-eye
-  post_views: true
-  post_views_icon: fa fa-eye
+# busuanzi_count:
+#   enable: false
+#   total_visitors: true
+#   total_visitors_icon: fa fa-user
+#   total_views: true
+#   total_views_icon: fa fa-eye
+#   post_views: true
+#   post_views_icon: fa fa-eye
+
+busuanzi_count:      # 页面阅读统计
+  enable: false    #设true 开启
+  total_visitors: true     #总阅读人数 uv数
+  total_visitors_icon: user  #阅读总人数的图标
+  total_views: true  #总阅读次数 pv数
+  total_views_icon: eye  #阅读总次数的图标
+  post_views: true #开启内容阅读次数
+  post_views_icon: eye #内容页阅读数的图标
+
 
 
 # ---------------------------------------------------------------

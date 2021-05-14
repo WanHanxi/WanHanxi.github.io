@@ -2,7 +2,7 @@
 title: Hexo Notes
 date: 2020-12-20 16:06:43
 categories: 笔记
-updated: 2020-12-21 00:09:10
+description: Some notes about the usage of hexo & Next.theme
 ---
 
 # Add Notes
@@ -39,9 +39,13 @@ npx hexo new draft '<title>'
 npx hexo publish [layout] <filename>
 ```
 
-# Counting tools
+# Counting tools & Comment sys.
 
 https://www.luanzhuxian.com/post/ec069b41.html
+
+email notification
+
+https://github.com/DesertsP/Valine-Admin
 
 # Generate `categoryies` page
 https://blog.csdn.net/u011240016/article/details/79422462
@@ -132,10 +136,71 @@ hexo g
 hexo d
 ```
 
+# 首页文章不展示全文显示摘要
 
+## 安装hexo-excerpt
+
+新版Next主题已经删除了这个选项，可以先安装插件，再进行相关配置就可以启用首页预览。
+
+在网站根目录下运行：
+
+```text
+npm install hexo-excerpt --save
+```
+
+在站点配置文件里添加：
+
+```text
+excerpt:
+  depth: 5  
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
+```
+
+主题配置文件设置：
+
+```text
+excerpt_description: true
+...
+read_more_btn: true
+```
+
+```作者：天地阔远
+链接：https://www.zhihu.com/question/394167076/answer/1418593507
+来源：知乎
+```
+
+## 使用
+
+- 法一：手动截断
+
+  在希望截断的地方加入`<!--more-->`
+
+  这样首页仅显示标记以上的内容
+
+- 法二：写概述
+
+  在`front-matter`字段添加`description`，形如
+
+  ```
+  ---
+  title: 让首页显示部分内容
+  date: 2020-02-23 22:55:10
+  description: 这是显示在首页的概述，正文内容均会被隐藏。
+  ---
+  ```
+
+# 引用本地图片问题
+
+https://cloud.tencent.com/developer/article/1702112
+
+https://github.com/xcodebuild/hexo-asset-image
 
 # Reference
 
 [超详细Hexo+Github Page搭建技术博客教程【持续更新】_个人文章 - SegmentFault 思否](https://segmentfault.com/a/1190000017986794)
 
 [hexo史上最全搭建教程 - zjufangzh](https://blog.csdn.net/sinat_37781304/article/details/82729029)
+
+[设置hexo首页只显示部分摘要](https://blog.csdn.net/yueyue200830/article/details/104470646/)
