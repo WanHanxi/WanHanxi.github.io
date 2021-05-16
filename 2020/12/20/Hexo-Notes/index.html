@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Some notes about the usage of hexo &amp; Next.theme">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Notes">
+<meta property="og:url" content="http://example.com/2020/12/20/Hexo-Notes/index.html">
+<meta property="og:site_name" content="Wanccy的小站">
+<meta property="og:description" content="Some notes about the usage of hexo &amp; Next.theme">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-20T08:06:43.000Z">
+<meta property="article:modified_time" content="2021-01-29T17:17:09.474Z">
+<meta property="article:author" content="Hanxi Wan">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2020/12/20/Hexo-Notes/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Hexo Notes | Wanccy的小站</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Wanccy的小站</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/WanHanxi" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/20/Hexo-Notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Hanxi Wan">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wanccy的小站">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo Notes
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-20 16:06:43" itemprop="dateCreated datePublished" datetime="2020-12-20T16:06:43+08:00">2020-12-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-30 01:17:09" itemprop="dateModified" datetime="2021-01-30T01:17:09+08:00">2021-01-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/12/20/Hexo-Notes/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo Notes" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/12/20/Hexo-Notes/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/12/20/Hexo-Notes/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">Some notes about the usage of hexo & Next.theme</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Add-Notes"><a href="#Add-Notes" class="headerlink" title="Add Notes"></a>Add Notes</h1><h2 id="Generate-New-md-notes"><a href="#Generate-New-md-notes" class="headerlink" title="Generate New md-notes"></a>Generate New md-notes</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#new md file</span></span><br><span class="line">npx hexo new <span class="string">&#x27;&lt;title&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>Edit your markdown file. You can find <strong>title.md</strong> in /source/_posts</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#generate</span></span><br><span class="line">npx hexo g</span><br><span class="line">npx hexo s <span class="comment">#set up local server</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#deploy</span></span><br><span class="line">npx hexo clean <span class="comment">#clean cache</span></span><br><span class="line">npx hexo g -d</span><br></pre></td></tr></table></figure>
+<h2 id="Generate-Draft"><a href="#Generate-Draft" class="headerlink" title="Generate Draft"></a>Generate Draft</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#optional: generate draft</span></span><br><span class="line">npx hexo new draft <span class="string">&#x27;&lt;title&gt;&#x27;</span></span><br><span class="line"><span class="comment">#saved in /source/_drafts</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#push</span></span><br><span class="line">npx hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="Counting-tools-amp-Comment-sys"><a href="#Counting-tools-amp-Comment-sys" class="headerlink" title="Counting tools &amp; Comment sys."></a>Counting tools &amp; Comment sys.</h1><p><a target="_blank" rel="noopener" href="https://www.luanzhuxian.com/post/ec069b41.html">https://www.luanzhuxian.com/post/ec069b41.html</a></p>
+<p>email notification</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/DesertsP/Valine-Admin">https://github.com/DesertsP/Valine-Admin</a></p>
+<h1 id="Generate-categoryies-page"><a href="#Generate-categoryies-page" class="headerlink" title="Generate categoryies page"></a>Generate <code>categoryies</code> page</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011240016/article/details/79422462">https://blog.csdn.net/u011240016/article/details/79422462</a></p>
+<h1 id="Backup-Hexo-source-code"><a href="#Backup-Hexo-source-code" class="headerlink" title="Backup Hexo source code"></a>Backup <code>Hexo</code> source code</h1><h2 id="Backup"><a href="#Backup" class="headerlink" title="Backup"></a>Backup</h2><ol>
+<li><p>build a new branch <code>hexo</code> in the repository.</p>
+</li>
+<li><p>Set the <code>hexo</code> branch as default in <code>Settings</code> of the repository, which saves specifying branches when pushing.</p>
+</li>
+<li><p>Open git bash under any directory you like</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#clone the current repository</span></span><br><span class="line">git <span class="built_in">clone</span> git@github.com:&lt;usrname&gt;/&lt;usrname&gt;.github.io.git</span><br></pre></td></tr></table></figure>
+<p>This will clone the <code>hexo</code> branch since it has been set as default.</p>
+</li>
+<li><p>Delete everything in the cloned directory except <code>.deploy_git</code>, copy all previous file into this directory.</p>
+<p>The <code>.gitignore</code> file should contains</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules&#x2F;</span><br><span class="line">public&#x2F;</span><br><span class="line">.deploy*&#x2F;</span><br></pre></td></tr></table></figure>
+<p>**Note: **If the themes in <code>/theme</code> is generated by cloning, you should delete the <code>.git</code> folder in <code>/theme/&lt;theme name&gt;</code>, or you won’t be able to upload your theme files.</p>
+</li>
+<li><p>Push the changes to the repository</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#under the hexo dir</span></span><br><span class="line">git add .</span><br><span class="line">git commit –m <span class="string">&quot;add branch&quot;</span></span><br><span class="line">git push </span><br></pre></td></tr></table></figure>
+<h2 id="Restore"><a href="#Restore" class="headerlink" title="Restore"></a>Restore</h2><ol>
+<li>Install supplementary packages</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#install git</span></span><br><span class="line">sudo apt-get install git</span><br><span class="line"></span><br><span class="line"><span class="comment">#set user name and mail address</span></span><br><span class="line">git config --global user.name <span class="string">&quot;&lt;your github name&gt;&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;&lt;your github email&gt;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#set ssh key</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;&lt;your email&gt;&quot;</span></span><br><span class="line"><span class="comment">#Then fill in the key in github settings</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#verification</span></span><br><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line"><span class="comment">#install node.js</span></span><br><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br><span class="line"></span><br><span class="line"><span class="comment">#install hexo</span></span><br><span class="line">sudo npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Clone the respository under any folder:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#clone the current repository</span></span><br><span class="line">git <span class="built_in">clone</span> git@github.com:&lt;usrname&gt;/&lt;usrname&gt;.github.io.git</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> &lt;usrname&gt;.github.io</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>Generate and deploy</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h1 id="首页文章不展示全文显示摘要"><a href="#首页文章不展示全文显示摘要" class="headerlink" title="首页文章不展示全文显示摘要"></a>首页文章不展示全文显示摘要</h1><h2 id="安装hexo-excerpt"><a href="#安装hexo-excerpt" class="headerlink" title="安装hexo-excerpt"></a>安装hexo-excerpt</h2><p>新版Next主题已经删除了这个选项，可以先安装插件，再进行相关配置就可以启用首页预览。</p>
+<p>在网站根目录下运行：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-excerpt --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件里添加：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">excerpt:</span><br><span class="line">  depth: 5  </span><br><span class="line">  excerpt_excludes: []</span><br><span class="line">  more_excludes: []</span><br><span class="line">  hideWholePostExcerpts: true</span><br></pre></td></tr></table></figure>
+<p>主题配置文件设置：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">excerpt_description: true</span><br><span class="line">...</span><br><span class="line">read_more_btn: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">链接：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;394167076&#x2F;answer&#x2F;1418593507</span><br><span class="line">来源：知乎</span><br></pre></td></tr></table></figure>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li><p>法一：手动截断</p>
+<p>在希望截断的地方加入<code>&lt;!--more--&gt;</code></p>
+<p>这样首页仅显示标记以上的内容</p>
+</li>
+<li><p>法二：写概述</p>
+<p>在<code>front-matter</code>字段添加<code>description</code>，形如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 让首页显示部分内容</span><br><span class="line">date: 2020-02-23 22:55:10</span><br><span class="line">description: 这是显示在首页的概述，正文内容均会被隐藏。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h1 id="引用本地图片问题"><a href="#引用本地图片问题" class="headerlink" title="引用本地图片问题"></a>引用本地图片问题</h1></li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1702112">https://cloud.tencent.com/developer/article/1702112</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/xcodebuild/hexo-asset-image">https://github.com/xcodebuild/hexo-asset-image</a></p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000017986794">超详细Hexo+Github Page搭建技术博客教程【持续更新】_个人文章 - SegmentFault 思否</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029">hexo史上最全搭建教程 - zjufangzh</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/yueyue200830/article/details/104470646/">设置hexo首页只显示部分摘要</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/20/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/28/%E6%B5%85%E8%B0%88Hash/" rel="next" title="浅谈Hash">
+      浅谈Hash <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Add-Notes"><span class="nav-number">1.</span> <span class="nav-text">Add Notes</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Generate-New-md-notes"><span class="nav-number">1.1.</span> <span class="nav-text">Generate New md-notes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Generate-Draft"><span class="nav-number">1.2.</span> <span class="nav-text">Generate Draft</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Counting-tools-amp-Comment-sys"><span class="nav-number">2.</span> <span class="nav-text">Counting tools &amp; Comment sys.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Generate-categoryies-page"><span class="nav-number">3.</span> <span class="nav-text">Generate categoryies page</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Backup-Hexo-source-code"><span class="nav-number">4.</span> <span class="nav-text">Backup Hexo source code</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Backup"><span class="nav-number">4.1.</span> <span class="nav-text">Backup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Restore"><span class="nav-number">4.2.</span> <span class="nav-text">Restore</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E4%B8%8D%E5%B1%95%E7%A4%BA%E5%85%A8%E6%96%87%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81"><span class="nav-number">5.</span> <span class="nav-text">首页文章不展示全文显示摘要</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85hexo-excerpt"><span class="nav-number">5.1.</span> <span class="nav-text">安装hexo-excerpt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">5.2.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E9%97%AE%E9%A2%98"><span class="nav-number">6.</span> <span class="nav-text">引用本地图片问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">7.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Hanxi Wan"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Hanxi Wan</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/WanHanxi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;WanHanxi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wanhanxi@foxmail.com" title="E-Mail → mailto:wanhanxi@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://tomcc7.github.io/" title="https:&#x2F;&#x2F;tomcc7.github.io&#x2F;" rel="noopener" target="_blank">CCBlog</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hanxi Wan</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : 'JSjfkN2Wfvfhvec99c2bS7Gi-MdYXbMMI',
+      appKey     : '6kvmcr2ah2RfnKLtwYAyE0Lb',
+      placeholder: "填写邮箱以获得回复提醒~",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
