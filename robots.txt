@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://wanhanxi.github.io/gatsby-theme-academic/sitemap/sitemap-index.xml
+Host: https://wanhanxi.github.io
