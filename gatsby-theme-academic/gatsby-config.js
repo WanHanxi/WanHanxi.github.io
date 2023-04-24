@@ -2,7 +2,7 @@
 module.exports = ({
   contentPath = 'content',
   author = '',
-  googleAnalyticTrackingId = 'UA-XXXXXXXXX-X',
+  googleAnalyticTrackingId = 'G-JYKB2S6T6N',
   defaultLanguage = 'en',
   pages = {
     home: '/',

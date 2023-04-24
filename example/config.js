@@ -55,8 +55,14 @@ module.exports = {
   // },
   // contactFormUrl: process.env.CONTACT_FORM_ENDPOINT
   //   || 'https://getform.io/f/09a3066f-c638-40db-ad59-05e4ed71e451',
-  googleAnalyticTrackingId: process.env.GA_TRACKING_ID || 'G-JYKB2S6T6N',
+  googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
   education: [
+    {
+      date: 'Aug 2023 - Future',
+      icon: 'university',
+      title: 'Master of Science in Robotics',
+      location: 'University of Michigan, Ann Arbor, MI, United States',
+    },
     {
       date: 'Aug 2021 - Present',
       icon: 'graduation-cap',
