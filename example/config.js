@@ -9,7 +9,7 @@ module.exports = {
     'I am currently an Undergraduate student majoring in **Computer Engineering** at [the University of Michigan](https://umich.edu/). I am also an undergraduate student majoring in **Electrical and Computer Engineering** in [UM-SJTU Joint Institute](https://www.ji.sjtu.edu.cn/) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/) (SJTU).',
     'My interest mainly lies in Robotics and Reinforcement Learning. To be more specific, I am interested in robot perception and planning.',
   ],
-  avatar: 'avatar.png',
+  avatar: 'avatar.jpg',
   professions: [
     'Incoming ROB MS Student',
   ],

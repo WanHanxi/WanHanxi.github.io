@@ -31,14 +31,13 @@
 
     .profileAvatar {
       //background-image: url('../../../images/avatar.jpg');
-      height: 180px;
+      height: 280px; //180px;
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: @border-radius-full;
-      //@media screen and (max-width: 767px) {
-      //  max-width: 180px;
-      //  margin: auto;
-      //}
+      @media screen and (max-width: 767px) {
+       max-height: 230px;
+      }
       margin: auto;
     }
 
