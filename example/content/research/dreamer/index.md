@@ -1,6 +1,6 @@
 ---
-title: "Constructing"
-tags: ["rl"]
+title: "Under Construction"
+tags: ["Reinforcement Learning"]
 path: "research/dreamer"
 excerpt: To be continued..
 cover: "./preview.png"

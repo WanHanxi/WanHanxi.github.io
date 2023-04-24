@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '',
   siteUrl: 'https://wanhanxi.github.io',
   title: 'Hanxi Wan',
-  description: 'Personal Website of John Doe',
+  description: 'Personal Website of Hanxi Wan',
   author: 'Hanxi Wan',
   // authorAlternative: 'whx',
   introduction: [
@@ -11,7 +11,7 @@ module.exports = {
   ],
   avatar: 'avatar.png',
   professions: [
-    'U-M President',
+    'Incoming ROB MS Student',
   ],
   tocMaxDepth: 2,
   excerptMaxLength: 500,
@@ -55,7 +55,7 @@ module.exports = {
   // },
   // contactFormUrl: process.env.CONTACT_FORM_ENDPOINT
   //   || 'https://getform.io/f/09a3066f-c638-40db-ad59-05e4ed71e451',
-  // googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
+  googleAnalyticTrackingId: process.env.GA_TRACKING_ID || 'G-JYKB2S6T6N',
   education: [
     {
       date: 'Aug 2021 - Present',
@@ -67,12 +67,8 @@ module.exports = {
       icon: 'university',
       title: 'Bachelor of Science in Electrical and Computer Engineering',
       location: 'Shanghai Jiao Tong University, Shanghai, China',
-    }, {
-      date: 'Sep 2016 - Jun 2019',
-      icon: 'school',
-      title: 'High School',
-      location: 'Shanghai Jincai High School, Shanghai, China',
-    }],
+    }
+  ],
   interests: [
     {
       icon: 'robot',
