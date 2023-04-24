@@ -145,12 +145,15 @@ module.exports = ({
         },
       },
       {
-        resolve: 'gatsby-plugin-google-analytics',
+        resolve: 'gatsby-plugin-google-gtag',
         options: {
           // The property ID; the tracking code won't be generated without it
-          trackingId: googleAnalyticTrackingId,
-          // Defines where to place the tracking script - `true` in the head and `false` in the body
-          head: false,
+          trackingIds: [googleAnalyticTrackingId],
+          // This object is used for configuration specific to this plugin
+          pluginConfig: {
+            // Puts tracking script in the head instead of the body
+            head: true,
+          },
         },
       },
       {
