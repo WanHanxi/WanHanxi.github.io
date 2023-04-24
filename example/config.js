@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/gatsby-theme-academic',
+  pathPrefix: '',
   siteUrl: 'https://wanhanxi.github.io',
   title: 'Hanxi Wan',
   description: 'Personal Website of John Doe',
@@ -11,7 +11,7 @@ module.exports = {
   ],
   avatar: 'avatar.png',
   professions: [
-    'Undergraduate Student',
+    'U-M President',
   ],
   tocMaxDepth: 2,
   excerptMaxLength: 500,
