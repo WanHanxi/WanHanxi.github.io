@@ -6,12 +6,12 @@ module.exports = {
   author: 'Hanxi Wan',
   // authorAlternative: 'whx',
   introduction: [
-    'I am currently an Undergraduate student majoring in **Computer Engineering** at [the University of Michigan](https://umich.edu/). I am also an undergraduate student majoring in **Electrical and Computer Engineering** in [UM-SJTU Joint Institute](https://www.ji.sjtu.edu.cn/) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/) (SJTU).',
-    'My interest mainly lies in Robotics and Reinforcement Learning. To be more specific, I am interested in robot perception and planning.',
+    'I am currently a Master student majoring in Robotics at [the University of Michigan](https://umich.edu/) (UMich), where I work on racecar autonomous racing at [ROAHM Lab](http://www.roahmlab.com/). Prior to that, I received my Bachelor\'s degree in Computer Engineering from the University of Michigan and Electrical and Computer Engineering from [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/) (SJTU).',
+    'My interest mainly lies in robot perception and planning, with a focus on reliable reinforcement learning.',
   ],
   avatar: 'avatar.jpg',
   professions: [
-    'Incoming ROB MS Student',
+    'Robotics MS Student',
   ],
   tocMaxDepth: 2,
   excerptMaxLength: 500,
@@ -64,25 +64,30 @@ module.exports = {
       location: 'University of Michigan, Ann Arbor, MI, United States',
     },
     {
-      date: 'Aug 2021 - Present',
+      date: 'Aug 2021 - Apr 2023',
       icon: 'graduation-cap',
       title: 'Bachelor of Science, Engineering in Computer Engineering',
       location: 'University of Michigan, Ann Arbor, MI, United States',
     }, {
-      date: 'Sep 2019 - Present',
-      icon: 'university',
+      date: 'Sep 2019 - Aug 2023',
+      icon: 'graduation-cap',
       title: 'Bachelor of Science in Electrical and Computer Engineering',
       location: 'Shanghai Jiao Tong University, Shanghai, China',
     }
   ],
-  interests: [
+  interests: [  // https://fontawesome.com/v5/search?
     {
       icon: 'robot',
       title: 'Robotics Perception and Planning',
     }, {
       icon: 'brain',
       title: 'Reinforcement Learning',
-    }],
+    }, {
+      icon: 'skiing',
+      title: 'Skiing',
+    }
+    
+  ],
   experience: [
     {
       title: 'Research',
@@ -98,7 +103,7 @@ module.exports = {
           date: 'Apr 2022 - Present',
           title: 'Research Assistant',
           location: 'University of Michigan, Ann Arbor',
-          description: 'Research on explainable reinforcement learning for highway driving',
+          description: 'Research on explainable reinforcement learning for highway driving at [UMTRI](https://www.umtri.umich.edu/)',
         }
       ],
     }, {
@@ -110,10 +115,23 @@ module.exports = {
           title: 'Grader of EECS 445 Introduction to Machine Learning',
           location: 'University of Michigan, Ann Arbor',
         },
+        {
+          date: 'Jan 2021 - Feb 2021',
+          title: 'Intern, Software Test Engineer, IBM China',
+          location: 'Shanghai, China'
+        }
       ],
     },
   ],
   awards: [
+    {
+      date: '2023',
+      title: 'James B. Angell Scholar, UMich',
+    },
+    {
+      date: '2021, 2022',
+      title: 'Unviersity Honors, UMich',
+    },
     {
       date: '2020',
       title: '2019-2020 Undergraduate Excellent Scholarship, SJTU',
