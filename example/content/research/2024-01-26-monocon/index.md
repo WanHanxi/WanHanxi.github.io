@@ -1,5 +1,5 @@
 ---
-title: "Project: Improved MonoCon"
+title: "Project: Improved MonoCon, Monocular 3D Object Detection for Autonomous Driving"
 tags: ["Perception"]
 path: "research/2024-01-26-monocon"
 excerpt: A monocular 3D object detection method without exploiting any extra information such as lidar and depth.
