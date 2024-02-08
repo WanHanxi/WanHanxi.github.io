@@ -1,6 +1,6 @@
 ---
 title: "Multimodal Perception for Autonomous Racing"
-tags: ["Machine Learning", "Reinforcement Learning"]
+tags: ["Perception", "Planning", "Reinforcement Learning"]
 path: "research/2023-05-08-racingdreamer"
 excerpt: This paper illustrated that multimodal perception combining egocentric LiDAR and RGB camera improves robustness of the world model in model-based reinforcement learning.
 cover: "./overview.png"

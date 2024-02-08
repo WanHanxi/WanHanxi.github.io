@@ -1,6 +1,6 @@
 ---
 title: "Project: A Guided Tour to Neural Radiance Field"
-tags: ["Machine Learning"]
+tags: ["Machine Learning", "Perception"]
 path: "research/2022-04-26-tinynerf"
 excerpt: A course mini project for EECS 498 - Deep learning for Computer Vision 2022.
 cover: "./nerf.png"
