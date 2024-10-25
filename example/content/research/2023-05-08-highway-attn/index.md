@@ -2,7 +2,7 @@
 title: "Demystifying Deep Reinforcement Learning-Based Autonomous Vehicle Decision-Making"
 tags: ["Control", "Reinforcement Learning"]
 path: "research/2023-05-08-highway-attn"
-excerpt: This work focuses on the interpretability of an attention-based DRL framework.
+excerpt: This work focuses on the interpretability of an attention-based DRL framework.<br> <br> **H. Wan**, P. Li, and A. Kusari, Demystifying the Physics of Deep Reinforcement Learning-Based Autonomous Vehicle Decision-Making. 2024.
 cover: "./overview.png"
 priority: 3
 links:
