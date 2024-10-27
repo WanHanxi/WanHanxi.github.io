@@ -111,14 +111,19 @@ module.exports = {
       position: 'right',
       data: [
         {
+          date: 'Jun 2024 - Aug 2024',
+          title: 'Intern, Software Engineer, ADAS Simulation',
+          location: 'Magna Electronics, Lowell, MA',
+        },
+        {
           date: 'Fall 2022',
           title: 'Grader of EECS 445 Introduction to Machine Learning',
           location: 'University of Michigan, Ann Arbor',
         },
         {
           date: 'Jan 2021 - Feb 2021',
-          title: 'Intern, Software Test Engineer, IBM China',
-          location: 'Shanghai, China'
+          title: 'Intern, Software Test Engineer',
+          location: 'IBM China, Shanghai'
         }
       ],
     },
